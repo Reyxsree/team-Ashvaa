@@ -1,0 +1,286 @@
+
+
+
+.navbar{
+    background-color: rgba(34, 34, 34, 0.9) ;
+    border-bottom: solid #8b1309 5px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar img{
+    margin-top: 10px;
+    width: 100px;
+}
+
+.navbar h3{
+    background-color: transparent;
+    margin-top: 30px;
+    color:#E4002B ;
+    text-shadow: #f2f2f2;
+    padding: 5px;
+    font-size: x-large;
+}
+.navbar h3:hover{
+    animation: containerZoom 1ms backwards;
+    color: aliceblue;
+}
+.navbar a{
+    text-decoration: none;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://wallpapercave.com/wp/wp12128326.jpg') no-repeat center center fixed;
+    
+}
+
+
+
+
+
+
+
+
+.container {
+    text-align: center;
+    background: rgba(34, 34, 34, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+    max-width: 90vw; /* Ensures it doesn't overflow on small screens */
+     /* Uses viewport width for border */
+    animation: containerZoom 1s ease-out forwards;
+    margin-top: 20vh; /* Increased value to move the container lower */
+}
+
+@keyframes containerZoom {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+} 
+
+h1, h3, h6 {
+    margin: 5px 0;
+    color: #000; /* Changed text color to black */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+.team-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-name h1, .team-name h3 {
+    color: white;
+    font-size: 3em; /* Reduced font size */
+    font-weight: 700;
+    margin: 0 10px; /* Space between "TEAM" and "ASHVA" */
+    animation: fadeInText 1s ease-out;
+}
+h6 {
+    font-size: 1.5em; /* Reduced font size */
+    color: #FFF;
+    font-weight: 300;
+    animation: fadeInText 1.5s ease-out;
+}
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* --Navbar-- */
+.navbar__options a{
+    color: white;
+    text-decoration: none;
+}
+.container__about{
+    color: white;
+    font-size: x-large;
+    animation: fadeInText 1.5s ease-out;
+}
+
+.container__about h2{
+    color: #E4002B;
+}
+/* -----Home------ */
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .team-name p{
+    color: white;
+    font-size: x-large;
+    margin-top: 37px;
+  }
+  .team-name h1{
+    color: #E4002B;
+  }
+/* -----logo------ */
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+}
+.container1{
+    background: rgba(34, 34, 34, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+    max-width: 90vw; /* Ensures it doesn't overflow on small screens */
+     /* Uses viewport width for border */
+    animation: containerZoom 1s ease-out forwards;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    width: 100%;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+.container1 img{
+    padding:0;
+    margin: 0;
+    width: 350px;
+}
+
+.container1 h2{
+    color:white;
+    width: 500px;
+}
+
+
+/* ----------SPONSERS---------- */
+.container2{
+    background: rgba(34, 34, 34, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+    animation: containerZoom 1s ease-out forwards;
+    margin-top: 20vh;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+
+}
+.container2 h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.partner-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+.partner-links a {
+    display: flex;
+    animation: logoReveal 1s ease-out forwards;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.partner-links img {
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+@keyframes logoReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.partner-links img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+}
+.partner-links a:active img {
+    transform: scale(0.95) rotate(2deg);
+}
+.partner-links a:nth-child(1) { animation-delay: 0.3s; }
+.partner-links a:nth-child(2) { animation-delay: 0.6s; }
+.partner-links a:nth-child(3) { animation-delay: 0.9s; }
+.partner-links a:nth-child(4) { animation-delay: 1.2s; }
+.partner-links a:nth-child(5) { animation-delay: 1.5s; }
+.partner-links a:nth-child(6) { animation-delay: 1.8s; }
+.partner-links a:nth-child(7) { animation-delay: 2.1s; }
+
+.partner-links .HGlogo{
+    width: 100px;
+}
+
+/* -------members------- */
+.container__images img{
+    width: 20%;
+}
+
+
+/* --------footer-------- */
+
+.footer{
+    background-color: black;
+    margin-top: 20px;
+}
+.footer__one{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer__one p{
+    margin-top: 20px;
+color: white;
+}
+.footer__one__s1 img{
+    width: 70px;
+}
+
+.footer__one__s2 img{
+    width: 50px;
+}
+.footer_two{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__two__s1 p{
+margin-left: 10px;
+}
+.footer__two__s1{
+    color: white;
+}
+.footer__two__s1 p{
+    color: white;
+}
